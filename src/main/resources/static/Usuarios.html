@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ABM</title>
+    <!--My styles-->
+
+    <link href="css/myStyles.css" rel="stylesheet>">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    
+
+</head>
+
+<body id="page-top">
+    <h1 class="text-center font-weight-bold tittle text-primary">ABM</h1>
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column ">
+            <!-- Main Content -->
+            <div id="content">
+                <div class="container-fluid">
+                    <div class="btn btn-primary prueba" id="buttonAdd">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                    </div>
+                    <!--Form-->
+                    <div class="card-body " id="card-body">
+                        <form class="form row border" style="background-color: #f8f9fc;">
+                            <div class="col-md-4">
+                              <label for="validationDefault01" class="form-label">Nombre</label>
+                              <input type="text" class="form-control" id="inputName" required>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationDefault02" class="form-label">Apellido</label>
+                              <input type="text" class="form-control" id="inputLastName" required>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationDefaultUsername" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="inputEmail"  aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputAddress" class="form-label">Direccion</label>
+                              <input type="text" class="form-control" id="inputaddress" required>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="validationDefault05" class="form-label">Teléfono</label>
+                              <input type="tel" class="form-control" id="inputPhone" required>
+                            </div>
+                            <div class="col-12 mt-3 mb-3">
+                              <button class="btn btn-primary btnGuardar" type="" id="btnGuardar">Guardar</button>
+                              <button class="btn btn-primary form" type="" id="btnEditar">Guardar</button>
+                              <button class="btn btn-danger" type="reset" id="btnCancel">Cancelar</button>
+                            </div>
+                          </form>
+                    </div>
+                    
+                </div>
+                <!-- Begin Page Content -->
+                <div class="container-fluid lista">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4 lista  ">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Listado de Usuarios</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="usuarios" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Nombre</th>
+                                            <th>Email</th>
+                                            <th>Direccion</th>
+                                            <th>Teléfono</th>
+                                            <th>Opciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="btnContainer">
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-success btn-circle btn-sm">
+                                                    <i class="fas fa-check"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- End of Main Content -->
+        </div>
+        <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--My Js-->
+    <script src="./js/btnAdd.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/usuarios.js"></script>
+
+</body>
+
+</html>
